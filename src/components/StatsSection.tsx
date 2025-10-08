@@ -57,7 +57,7 @@ const StatsSection = () => {
 
   return (
     <section className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[80%] mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">Powered by Open Source APIs</h2>
           <p className="text-xl text-muted-foreground">
@@ -71,12 +71,12 @@ const StatsSection = () => {
             return (
               <div
                 key={stat.label}
-                className="glass-card p-8 text-center hover:scale-105 transition-all"
+                className="glass-card p-6 text-center hover:scale-105 transition-all"
               >
                 <div className={`inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/20 mb-4 ${stat.color}`}>
                   <Icon className="w-8 h-8" />
                 </div>
-                <div className="text-4xl font-bold mb-2">
+                <div className="text-2xl font-bold mb-2">
                   {stat.value}
                   <span className={stat.color}>{stat.suffix}</span>
                 </div>

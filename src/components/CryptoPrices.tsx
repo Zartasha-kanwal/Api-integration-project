@@ -44,8 +44,8 @@ const CryptoPrices = () => {
   }
 
   return (
-    <section className="py-20 px-4 bg-card/20">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 px-4 ">
+      <div className="max-w-[80%] mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center">
           <DollarSign className="inline-block mr-3" />
           Cryptocurrency Markets
@@ -54,7 +54,7 @@ const CryptoPrices = () => {
           {cryptos?.map((crypto) => {
             const isPositive = crypto.price_change_percentage_24h > 0;
             return (
-              <div key={crypto.id} className="glass-card p-6 hover:scale-105 transition-all">
+              <div key={crypto.id} className="glass-card p-6 hover:scale-105 transition-all cursor-pointer">
                 <div className="flex items-center gap-3 mb-4">
                   <img src={crypto.image} alt={crypto.name} className="w-10 h-10" />
                   <div className="flex-1 min-w-0">

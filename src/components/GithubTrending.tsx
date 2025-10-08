@@ -52,8 +52,8 @@ const GithubTrending = () => {
   }
 
   return (
-    <section className="py-20 px-4">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 px-4 ">
+      <div className="max-w-[80%] mx-auto">
         <h2 className="text-4xl font-bold mb-12 text-center">
           <Github className="inline-block mr-3" />
           Trending Repositories

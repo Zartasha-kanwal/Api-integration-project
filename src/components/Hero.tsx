@@ -2,7 +2,7 @@ import { Github, TrendingUp, Database } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center px-4 py-44 overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[128px] animate-pulse-glow" />
@@ -11,12 +11,12 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <div className="animate-fade-in">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 leading-tight">
+          <h1 className="lg:text-7xl text-3xl  font-bold mb-6 leading-tight">
             Real-Time Data
             <br />
             <span className="text-gradient">At Your Fingertips</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto">
+          <p className="text-sm md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto">
             Experience the power of live API integrations. Track GitHub trends, cryptocurrency prices, and more in real-time.
           </p>
         </div>

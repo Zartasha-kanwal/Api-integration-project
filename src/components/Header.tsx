@@ -57,13 +57,13 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pt-4 border-t border-white/10 animate-fade-in">
+          <div className="md:hidden mt-4 pt-4 border-t border-white/10 animate-fade-in overflow-y-auto">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-foreground/80 hover:text-foreground transition-colors font-medium py-2"
+                  className="text-foreground/80 hover:text-foreground transition-colors font-medium "
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
