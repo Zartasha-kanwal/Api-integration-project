@@ -28,7 +28,6 @@ const GithubTrending = () => {
       const data = await response.json();
       return data.items as GithubRepo[];
     },
-    refetchInterval: 60000, // Refetch every minute
   });
 
   if (isLoading) {

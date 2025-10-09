@@ -20,7 +20,6 @@ const CryptoPrices = () => {
       );
       return response.json() as Promise<CryptoData[]>;
     },
-    refetchInterval: 30000, // Refetch every 30 seconds
   });
 
   if (isLoading) {

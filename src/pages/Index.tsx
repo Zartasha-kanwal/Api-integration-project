@@ -3,6 +3,8 @@ import Hero from "@/components/Hero";
 import GithubTrending from "@/components/GithubTrending";
 import CryptoPrices from "@/components/CryptoPrices";
 import StatsSection from "@/components/StatsSection";
+import NasaSection from "@/components/NasaSection";
+import SpaceXSection from "@/components/SpaceXSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -21,9 +23,16 @@ const Index = () => {
       <div id="crypto">
         <CryptoPrices />
       </div>
+      <div id="nasa">
+        <NasaSection />
+      </div>
+      <div id="spacex">
+        <SpaceXSection />
+      </div>
       <Footer />
     </div>
   );
 };
 
 export default Index;
+

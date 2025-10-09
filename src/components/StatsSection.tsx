@@ -16,7 +16,7 @@ const StatsSection = () => {
     },
   });
 
-  // Simulate real-time data updates
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setRealtimeCount((prev) => prev + Math.floor(Math.random() * 10));

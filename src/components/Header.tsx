@@ -8,7 +8,8 @@ const Header = () => {
     { label: "Home", href: "#home" },
     { label: "GitHub", href: "#github" },
     { label: "Crypto", href: "#crypto" },
-    { label: "Stats", href: "#stats" },
+    { label: "NASA", href: "#nasa" },
+    { label: "SpaceX", href: "#spacex" },
   ];
 
   return (
@@ -57,13 +58,13 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pt-4 border-t border-white/10 animate-fade-in overflow-y-auto">
+          <div className="md:hidden mt-4 pt-4 border-t border-white/10 animate-fade-in">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-foreground/80 hover:text-foreground transition-colors font-medium "
+                  className="text-foreground/80 hover:text-foreground transition-colors font-medium py-2"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.label}
