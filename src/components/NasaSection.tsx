@@ -16,24 +16,26 @@ const NasaSection = () => {
   const { data, isLoading } = useQuery({
     queryKey: ["space-news"],
     queryFn: async () => {
-      const res = await fetch("https://api.spaceflightnewsapi.net/v4/articles/?limit=1");
+      const res = await fetch(
+        "https://api.spaceflightnewsapi.net/v4/articles/?limit=1"
+      );
       if (!res.ok) throw new Error("Failed to fetch space news");
       const json = await res.json();
-      return json.results[0] as SpaceArticle; 
+      return json.results[0] as SpaceArticle;
     },
   });
 
   const article = data;
 
   return (
-    <section className="py-24 px-4">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-28 px-4">
+      <div className="max-w-[80%] mx-auto">
         <div className="text-center mb-16 animate-fade-in">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Rocket className="w-8 h-8 text-primary" />
-            <h2 className="text-5xl font-bold">Space News</h2>
+            <h2 className="md:text-4xl text-2xl font-bold">Space News</h2>
           </div>
-          <p className="text-muted-foreground text-xl">
+          <p className="text-muted-foreground lg:text-xl">
             Latest headlines from the cosmos
           </p>
         </div>
@@ -65,15 +67,20 @@ const NasaSection = () => {
                     <div className="flex items-center gap-2 text-muted-foreground mb-4">
                       <Calendar className="w-4 h-4" />
                       <span>
-                        {new Date(article.published_at).toLocaleDateString("en-US", {
-                          year: "numeric",
-                          month: "long",
-                          day: "numeric",
-                        })}
+                        {new Date(article.published_at).toLocaleDateString(
+                          "en-US",
+                          {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                          }
+                        )}
                       </span>
                     </div>
 
-                    <h3 className="text-3xl font-bold mb-4">{article.title}</h3>
+                    <h3 className="md:text-3xl text-2xl font-bold mb-4">
+                      {article.title}
+                    </h3>
 
                     <p className="text-muted-foreground leading-relaxed mb-6 text-sm">
                       {article.summary}
@@ -99,4 +106,3 @@ const NasaSection = () => {
 };
 
 export default NasaSection;
-

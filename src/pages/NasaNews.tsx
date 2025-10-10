@@ -16,7 +16,9 @@ const NasaNews = () => {
   const { data, isLoading } = useQuery({
     queryKey: ["space-news-all"],
     queryFn: async () => {
-      const res = await fetch("https://api.spaceflightnewsapi.net/v4/articles/?limit=12");
+      const res = await fetch(
+        "https://api.spaceflightnewsapi.net/v4/articles/?limit=12"
+      );
       if (!res.ok) throw new Error("Failed to fetch space news");
       const json = await res.json();
       return json.results as SpaceArticle[];
@@ -25,10 +27,9 @@ const NasaNews = () => {
 
   return (
     <div className="min-h-screen bg-background">
-    
       <div className="max-w-[90%] mx-auto px-4 py-12">
         <Link
-          to="/"
+          to="/#nasa"
           className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
         >
           <ArrowLeft className="w-4 h-4" />
@@ -76,11 +77,14 @@ const NasaNews = () => {
                   <div className="flex items-center gap-2 text-muted-foreground text-sm mb-3">
                     <Calendar className="w-4 h-4" />
                     <span>
-                      {new Date(article.published_at).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}
+                      {new Date(article.published_at).toLocaleDateString(
+                        "en-US",
+                        {
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                        }
+                      )}
                     </span>
                   </div>
 

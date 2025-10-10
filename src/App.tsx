@@ -6,7 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import NasaNews from "./pages/NasaNews";
-import ScrollToTop from "@/components/ScrollToTop"; 
+import LaunchDetail from "./pages/LaunchDetail";
+import ScrollHandler from "@/components/ScrollToTop";
+
 
 const queryClient = new QueryClient();
 
@@ -16,10 +18,11 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <ScrollToTop /> 
+       <ScrollHandler/>
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/space-news" element={<NasaNews />} />
+           <Route path="/launch/:id" element={<LaunchDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

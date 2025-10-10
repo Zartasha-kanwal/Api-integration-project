@@ -59,8 +59,8 @@ const StatsSection = () => {
     <section className="py-20 px-4">
       <div className="max-w-[80%] mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4">Powered by Open Source APIs</h2>
-          <p className="text-xl text-muted-foreground">
+          <h2 className="md:text-4xl text-2xl font-bold mb-4">Powered by Open Source APIs</h2>
+          <p className="md:text-xl text-muted-foreground">
             Connecting to multiple data sources for comprehensive insights
           </p>
         </div>
