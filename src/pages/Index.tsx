@@ -6,6 +6,8 @@ import StatsSection from "@/components/StatsSection";
 import NasaSection from "@/components/NasaSection";
 import SpaceXSection from "@/components/SpaceXSection";
 import Footer from "@/components/Footer";
+import ApiCrudSection from "@/components/ApiCrudSection";
+import { Toaster } from "@/components/ui/toaster";
 
 const Index = () => {
   return (
@@ -25,6 +27,10 @@ const Index = () => {
       </div>
       <div id="nasa">
         <NasaSection />
+      </div>
+      <div id="crud">
+        <ApiCrudSection/>
+        <Toaster/>
       </div>
       <div id="spacex">
         <SpaceXSection />
