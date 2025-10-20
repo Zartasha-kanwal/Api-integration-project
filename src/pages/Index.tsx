@@ -8,6 +8,9 @@ import SpaceXSection from "@/components/SpaceXSection";
 import Footer from "@/components/Footer";
 import ApiCrudSection from "@/components/ApiCrudSection";
 import { Toaster } from "@/components/ui/toaster";
+import ReduxSection from "@/components/ReduxGallerySection";
+import ReduxMoviesSection from "@/components/ReduxMoviesSection";
+import ReduxUserGallerySection from "@/components/ReduxGallerySection";
 
 const Index = () => {
   return (
@@ -29,8 +32,14 @@ const Index = () => {
         <NasaSection />
       </div>
       <div id="crud">
-        <ApiCrudSection/>
-        <Toaster/>
+        <ApiCrudSection />
+        <Toaster />
+      </div>
+      <div id="usergallery">
+        <ReduxUserGallerySection />
+      </div>
+      <div id="movies">
+        <ReduxMoviesSection />
       </div>
       <div id="spacex">
         <SpaceXSection />
@@ -41,4 +50,3 @@ const Index = () => {
 };
 
 export default Index;
-

@@ -6,11 +6,12 @@ const Header = () => {
 
   const navLinks = [
     { label: "Home", href: "#home" },
-    { label: "GitHub", href: "#github" },
-    { label: "Crypto", href: "#crypto" },
     { label: "NASA", href: "#nasa" },
     { label: "SpaceX", href: "#spacex" },
     { label: "Users", href: "#crud" },
+    { label: "Gallery", href: "#usergallery" },
+    { label: "Movies", href: "#movies" },
+
   ];
 
   return (
@@ -26,7 +27,7 @@ const Header = () => {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.label}
@@ -40,13 +41,13 @@ const Header = () => {
           </div>
 
           {/* CTA Button */}
-          <button className="hidden md:block px-6 py-2 rounded-lg bg-primary/20 text-primary font-semibold hover:bg-primary/30 hover:scale-105 transition-all">
+          <button className="hidden lg:block px-6 py-2 rounded-lg bg-primary/20 text-primary font-semibold hover:bg-primary/30 hover:scale-105 transition-all">
             Get Started
           </button>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 hover:bg-primary/10 rounded-lg transition-colors"
+            className="lg:hidden p-2 hover:bg-primary/10 rounded-lg transition-colors"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
             {mobileMenuOpen ? (
@@ -59,7 +60,7 @@ const Header = () => {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden mt-4 pt-4 border-t border-white/10 animate-fade-in">
+          <div className="lg:hidden mt-4 pt-4 border-t border-white/10 animate-fade-in">
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
