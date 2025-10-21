@@ -11,6 +11,7 @@ import { Toaster } from "@/components/ui/toaster";
 import ReduxSection from "@/components/ReduxGallerySection";
 import ReduxMoviesSection from "@/components/ReduxMoviesSection";
 import ReduxUserGallerySection from "@/components/ReduxGallerySection";
+import ApolloLaunchesSection from "@/components/ApolloLaunchesSection";
 
 const Index = () => {
   return (
@@ -40,6 +41,9 @@ const Index = () => {
       </div>
       <div id="movies">
         <ReduxMoviesSection />
+      </div>
+      <div id="orbit">
+        <ApolloLaunchesSection/>
       </div>
       <div id="spacex">
         <SpaceXSection />

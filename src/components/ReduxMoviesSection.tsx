@@ -92,7 +92,7 @@ const MoviesContent = () => {
   );
 };
 
-// --- 5️⃣ Provider wrapper
+// --- Provider wrapper
 const ReduxMoviesSection = () => (
   <Provider store={store}>
     <MoviesContent />

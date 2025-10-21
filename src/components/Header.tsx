@@ -9,7 +9,7 @@ const Header = () => {
     { label: "NASA", href: "#nasa" },
     { label: "SpaceX", href: "#spacex" },
     { label: "Users", href: "#crud" },
-    { label: "Gallery", href: "#usergallery" },
+    { label: "Orbit", href: "#orbit" },
     { label: "Movies", href: "#movies" },
 
   ];
