@@ -1,7 +1,5 @@
 # Api-Integration-Project
 
-[![Vercel](https://img.shields.io/badge/deployed-on-Vercel-000?style=flat-square&logo=vercel)](https://api-integration-project.vercel.app/)
-
 A **React application built with Vite** that integrates multiple open-source APIs, including the GitHub API, SpaceX API, and NASA API.  
 It demonstrates modern state management and API handling using **Zustand, Redux Toolkit, TanStack Query, and Apollo Client**.
 
@@ -10,13 +8,6 @@ It demonstrates modern state management and API handling using **Zustand, Redux 
 ## 🌐 Live Demo
 
 Check it out here: [https://api-integration-project.vercel.app/](https://api-integration-project.vercel.app/)
-
----
-
-## 🖼 Screenshot
-
-![App Screenshot](./screenshot.png)  
-*(Add your screenshot image in the root of the repo as `screenshot.png`)*
 
 ---
 
